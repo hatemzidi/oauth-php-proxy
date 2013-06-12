@@ -1,12 +1,3 @@
-
-div[id^='html_javascript_adder'] {
-	margin-top: 0px;
-}
-
-div[id^='html_javascript_adder'] .widgettitle {
-	display: none !important;	
-}
-
 .tweets {
 	width: 200px;
 	height : 120px;

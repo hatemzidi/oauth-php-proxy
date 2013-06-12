@@ -2,12 +2,12 @@ jQuery(document).ready(function ($) {
 
     $('#tweet-list').hide();	
     var user = 'tom_z'; // Set your twitter id
-	var count = '10';// How many feeds do you want. Recommended Max 10 Twitter Api
+	var count = '10'; // How many feeds do you want. Recommended Max 10 Twitter Api
 
 	jQuery.getJSON('/twitter-proxy.php?user=' +  user + '&count=' + count , function(tweetdata) {
-				var tl = $("#tweet-list");
+				var twtlst = $("#tweet-list");
 				$.each(tweetdata, function(i,tweet) {
-					tl.append("<li>&ldquo;" + urlToLink(tweet.text) + "&rdquo;<br/>&ndash; " + makeUrl(tweet.id_str,relTime(tweet.created_at)) + "</li>");
+					twtlst.append("<li>&ldquo;" + urlToLink(tweet.text) + "&rdquo;<br/>&ndash; " + makeUrl(tweet.id_str,relTime(tweet.created_at)) + "</li>");
 				});
 			});
 	
@@ -25,7 +25,7 @@ jQuery(document).ready(function ($) {
 
 });
 
-
+//TODO make this user independent
 function makeUrl(id, txt)
 {
 	return '<a href="http://twitter.com/tom_z/status/' + id + '" target="_blank">' + txt + '</a>';
