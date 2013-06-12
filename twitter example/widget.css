@@ -1,0 +1,53 @@
+
+div[id^='html_javascript_adder'] {
+	margin-top: 0px;
+}
+
+div[id^='html_javascript_adder'] .widgettitle {
+	display: none !important;	
+}
+
+.tweets {
+	width: 200px;
+	height : 120px;
+	padding: 5px 0 0 26px;
+	background: url(twitter-bird.png) 0 5px no-repeat;
+	font-size: 12px;
+	line-height: 16px;
+	color: #657089;
+	overflow: hidden;
+	margin: 4px 0px;
+	/*
+	background-color: #fff;	
+	-webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;*/
+}
+
+.tweets ul li, .tweets p {
+	font-size: 12px;
+	line-height: 16px;
+	color: #657089; 
+}
+
+.tweets p {
+	padding : 10px 0 0 20px;
+	background: url(../../themes/Nova/images/dots16.gif) no-repeat 65px 13px;
+}
+
+#tweet-list {
+	width: 190px;
+    height: 200px;
+    overflow: hidden;
+    float: left;
+    display: block;
+    list-style-type: none !important; 
+    padding: 0px; 
+    margin: 0px;
+}
+
+#tweet-list li {
+	list-style: none !important;
+	list-style-image: none !important;
+	background-image: none;
+}
