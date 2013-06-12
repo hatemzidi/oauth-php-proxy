@@ -18,12 +18,13 @@
 .tweets ul li, .tweets p {
 	font-size: 12px;
 	line-height: 16px;
-	color: #657089; 
+	color: #657089;
+    padding: 4px 0px 4px 13px;
 }
 
 .tweets p {
 	padding : 10px 0 0 20px;
-	background: url(../../themes/Nova/images/dots16.gif) no-repeat 65px 13px;
+	background: url(dots16.gif) no-repeat 65px 13px;
 }
 
 #tweet-list {
@@ -41,4 +42,27 @@
 	list-style: none !important;
 	list-style-image: none !important;
 	background-image: none;
+}
+
+/* DEMO.HTML */
+body {
+    line-height: 18px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: #555;
+    text-shadow: 1px 1px 1px #FFF;
+    background-color: #EFF0EF;
+    min-width: 960px;
+
+}
+
+a {
+    color: #525252;
+}
+
+#demo {
+    margin : 0 auto;
+    max-width: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
