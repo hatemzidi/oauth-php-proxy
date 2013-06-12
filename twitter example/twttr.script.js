@@ -7,7 +7,7 @@ jQuery(document).ready(function ($) {
 	jQuery.getJSON('../twitter-proxy.php?user=' +  user + '&count=' + count , function(tweetdata) {
 				var twtlst = $("#tweet-list");
 				$.each(tweetdata, function(i,tweet) {
-					twtlst.append("<li>&ldquo;" + urlToLink(tweet.text) + "&rdquo;<br/>&ndash; " + makeUrl(tweet.id_str,relTime(tweet.created_at)) + "</li>");
+					twtlst.append("<li>&ldquo;" + urlToLink(tweet.text) + "&rdquo;<br/>&ndash; " + makeUrl(tweet.id_str,realTime(tweet.created_at)) + "</li>");
 				});
 			});
 	
@@ -41,7 +41,7 @@ function urlToLink(txt)
 	return str.replace(/^\s+|\s+$/g, "");
 }
 
-function relTime(pastTime)
+function realTime(pastTime)
 {	
 	var origStamp = Date.parse(pastTime);
 	if (navigator.userAgent.match(/MSIE\s([^;]*)/)) {
