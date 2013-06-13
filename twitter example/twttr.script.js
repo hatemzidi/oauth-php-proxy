@@ -1,13 +1,14 @@
+var user = 'tom_z'; // Set your twitter id
+var count = '10'; // How many feeds do you want. Recommended Max 10 Twitter Api
+
 jQuery(document).ready(function ($) {
 
-    $('#tweet-list').hide();	
-    var user = 'tom_z'; // Set your twitter id
-	var count = '10'; // How many feeds do you want. Recommended Max 10 Twitter Api
+    $('#tweet-list').hide();
 
-	jQuery.getJSON('../twitter-proxy.php?user=' +  user + '&count=' + count , function(tweetdata) {
+	jQuery.getJSON('../twitter-proxy-local.php?user=' +  user + '&count=' + count , function(tweetdata) {
 				var twtlst = $("#tweet-list");
 				$.each(tweetdata, function(i,tweet) {
-					twtlst.append("<li>&ldquo;" + urlToLink(tweet.text) + "&rdquo;<br/>&ndash; " + makeUrl(tweet.id_str,realTime(tweet.created_at)) + "</li>");
+					twtlst.append("<li>&ldquo;" + urlToLink(tweet.text) + "&rdquo;&nbsp;&ndash; " + makeUrl(tweet.id_str,realTime(tweet.created_at)) + "</li>");
 				});
 			});
 	
@@ -28,7 +29,7 @@ jQuery(document).ready(function ($) {
 //TODO make this user independent
 function makeUrl(id, txt)
 {
-	return '<a href="http://twitter.com/tom_z/status/' + id + '" target="_blank">' + txt + '</a>';
+	return '<a href="http://twitter.com/' +  user + '/status/' + id + '" target="_blank">' + txt + '</a>';
 }
 
 
