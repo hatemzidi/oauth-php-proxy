@@ -1,47 +1,47 @@
 .tweets {
-	width: 200px;
-	height : 120px;
-	padding: 5px 0 0 26px;
-	background: url(twitter-bird.png) 0 5px no-repeat;
-	font-size: 12px;
-	line-height: 16px;
-	color: #657089;
-	overflow: hidden;
-	margin: 4px 0px;
-	/*
-	background-color: #fff;	
-	-webkit-border-radius: 7px;
+    width: 200px;
+    height: 120px;
+    padding: 5px 0 0 26px;
+    background: url(twitter-bird.png) 0 5px no-repeat;
+    font-size: 12px;
+    line-height: 16px;
+    color: #657089;
+    overflow: hidden;
+    margin: 4px 0px;
+    /*
+    background-color: #fff;
+    -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
     border-radius: 7px;*/
 }
 
 .tweets ul li, .tweets p {
-	font-size: 12px;
-	line-height: 16px;
-	color: #657089;
+    font-size: 12px;
+    line-height: 16px;
+    color: #657089;
     padding: 4px 0px 4px 13px;
 }
 
 .tweets p {
-	padding : 10px 0 0 20px;
-	background: url(dots16.gif) no-repeat 65px 13px;
+    padding: 10px 0 0 20px;
+    background: url(dots16.gif) no-repeat 65px 13px;
 }
 
 #tweet-list {
-	width: 190px;
+    width: 190px;
     height: 200px;
     overflow: hidden;
     float: left;
     display: block;
-    list-style-type: none !important; 
-    padding: 0px; 
+    list-style-type: none !important;
+    padding: 0px;
     margin: 0px;
 }
 
 #tweet-list li {
-	list-style: none !important;
-	list-style-image: none !important;
-	background-image: none;
+    list-style: none !important;
+    list-style-image: none !important;
+    background-image: none;
 }
 
 /* DEMO.HTML */
@@ -61,7 +61,7 @@ a {
 }
 
 #demo {
-    margin : 0 auto;
+    margin: 0 auto;
     max-width: 600px;
     padding-left: 20px;
     padding-right: 20px;
